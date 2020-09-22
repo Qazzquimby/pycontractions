@@ -327,7 +327,7 @@ class Contractions(object):
             raise AttributeError("No model given")
 
         try:
-            self.lc_tool = language_check.LanguageTool(self.lang_code)
+            self.lc_tool = language_tool_python.LanguageTool(self.lang_code)
         except:
             print("Error initializing LanguageTool")
             raise
